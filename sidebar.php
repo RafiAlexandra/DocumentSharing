@@ -54,28 +54,109 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link nav-is-tree nav-edit_document nav-view_document">
-              <i class="nav-icon fa fa-folder-open"></i>
-              <p>
-                Documents
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="./index.php?page=new_document" class="nav-link nav-new_document tree-item">
-                  <i class="fas fa-angle-right nav-icon"></i>
-                  <p>Add New</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./index.php?page=document_list" class="nav-link nav-document_list tree-item">
-                  <i class="fas fa-angle-right nav-icon"></i>
-                  <p>List</p>
-                </a>
-              </li>
-            </ul>
-          </li>  
+  <a href="#" class="nav-link nav-is-tree nav-edit_document nav-view_document">
+    <i class="nav-icon fa fa-folder-open"></i>
+    <p>
+      Documents
+      <i class="right fas fa-angle-left"></i>
+    </p>
+  </a>
+  <ul class="nav nav-treeview">
+    <li class="nav-item">
+      <a href="#" class="nav-link nav-is-tree nav-edit_document nav-view_document">
+        <i></i>
+        <p>
+          HSSE
+          <i class="right fas fa-angle-left"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="./index.php?page=new_document" class="nav-link nav-new_document tree-item">
+            <i class="fas fa-angle-right nav-icon"></i>
+            <p>Add New</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="./index.php?page=document_list" class="nav-link nav-document_list tree-item">
+            <i class="fas fa-angle-right nav-icon"></i>
+            <p>List</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link nav-is-tree nav-edit_document nav-view_document">
+        <i></i>
+        <p>
+          P1
+          <i class="right fas fa-angle-left"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="./index.php?page=new_document" class="nav-link nav-new_document tree-item">
+            <i class="fas fa-angle-right nav-icon"></i>
+            <p>Add New</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="./index.php?page=document_list" class="nav-link nav-document_list tree-item">
+            <i class="fas fa-angle-right nav-icon"></i>
+            <p>List</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link nav-is-tree nav-edit_document nav-view_document">
+        <i></i>
+        <p>
+          p1
+          <i class="right fas fa-angle-left"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="./index.php?page=new_document" class="nav-link nav-new_document tree-item">
+            <i class="fas fa-angle-right nav-icon"></i>
+            <p>Add New</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="./index.php?page=document_list" class="nav-link nav-document_list tree-item">
+            <i class="fas fa-angle-right nav-icon"></i>
+            <p>List</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link nav-is-tree nav-edit_document nav-view_document">
+        <i></i>
+        <p>
+           P1
+          <i class="right fas fa-angle-left"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="./index.php?page=new_document" class="nav-link nav-new_document tree-item">
+            <i class="fas fa-angle-right nav-icon"></i>
+            <p>Add New</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="./index.php?page=document_list" class="nav-link nav-document_list tree-item">
+            <i class="fas fa-angle-right nav-icon"></i>
+            <p>List</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</li>
+
         <?php else: ?>
           <li class="nav-item">
             <a href="#" class="nav-link nav-is-tree nav-edit_document nav-view_document">
