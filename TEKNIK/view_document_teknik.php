@@ -1,6 +1,6 @@
 <?php
 include 'db_connect.php';
-$qry = $conn->query("SELECT * FROM documents WHERE md5(id) = '{$_GET['id']}' ")->fetch_array();
+$qry = $conn->query("SELECT * FROM teknik WHERE md5(id) = '{$_GET['id']}' ")->fetch_array();
 foreach($qry as $k => $v){
     if($k == 'title')
         $k = 'ftitle';
