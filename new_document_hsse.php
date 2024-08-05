@@ -87,7 +87,7 @@
                       <div class="col-auto">
                           <span class="preview"><img src="data:," alt="" data-dz-thumbnail=""></span>
                       </div>
-                        <div class="col d-flex align-items-center">
+                      <div class="col d-flex align-items-center">
                           <p class="mb-0">
                             <span class="lead"><?php echo $dname[1] ?></span>
                             (<span><strong><?php echo filesize('assets/uploads/'.$v) ?></strong> Bytes</span>)
@@ -117,7 +117,7 @@
 
     <?php endif; ?>
 <?php else: ?>
-    No files to process.
+    <!-- tulisan di bawah uplod -->
 <?php endif; ?>
             </div>
             </div>
@@ -163,7 +163,7 @@ $(function () {
   previewNode.parentNode.removeChild(previewNode);
 
   var myDropzone = new Dropzone(document.body, { // Make the whole body a dropzone
-    url: "ajax_teknik.php?action=upload_file", // Set the url
+    url: "ajax.php?action=upload_file", // Set the url
     thumbnailWidth: 80,
     thumbnailHeight: 80,
     parallelUploads: 20,
@@ -227,7 +227,7 @@ $(function () {
 		e.preventDefault()
 		start_load()
 		$.ajax({
-			url:'ajax_hsse.php?action=save_upload',
+			url:'ajax.php?action=save_upload',
 			data: new FormData($(this)[0]),
 		    cache: false,
 		    contentType: false,
@@ -238,7 +238,7 @@ $(function () {
 				if(resp == 1){
 					alert_toast('Data successfully saved',"success");
 					setTimeout(function(){
-						location.href = 'index_hsse.php?page=document_list_hsse'
+						location.href = 'index.php?page=document_list_hsse'
 					},2000)
 				}
 			}
