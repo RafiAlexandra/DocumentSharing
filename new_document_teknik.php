@@ -163,7 +163,7 @@ $(function () {
   previewNode.parentNode.removeChild(previewNode);
 
   var myDropzone = new Dropzone(document.body, { // Make the whole body a dropzone
-    url: "ajax.php?action=upload_file", // Set the url
+    url: "ajax_teknik.php?action=upload_file", // Set the url
     thumbnailWidth: 80,
     thumbnailHeight: 80,
     parallelUploads: 20,
@@ -227,7 +227,7 @@ $(function () {
 		e.preventDefault()
 		start_load()
 		$.ajax({
-			url:'ajax.php?action=save_upload',
+			url:'ajax_teknik.php?action=save_upload',
 			data: new FormData($(this)[0]),
 		    cache: false,
 		    contentType: false,

@@ -50,6 +50,5 @@ if($action == 'delete_user'){
 	if($save)
 		echo $save;
 }
-
 ob_end_flush();
 ?>

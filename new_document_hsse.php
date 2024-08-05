@@ -163,12 +163,12 @@ $(function () {
   previewNode.parentNode.removeChild(previewNode);
 
   var myDropzone = new Dropzone(document.body, { // Make the whole body a dropzone
-    url: "ajax.php?action=upload_file", // Set the url
+    url: "ajax_hsse.php?action=upload_file", // Set the url
     thumbnailWidth: 80,
     thumbnailHeight: 80,
     parallelUploads: 20,
     previewTemplate: previewTemplate,
-    acceptedFiles:'application/pdf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+    acceptedFiles:'application/pdf,.doc,.docx,.xlsx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document',
     autoQueue: true, // Make sure the files aren't queued until manually added
     previewsContainer: "#previews", // Define the container to display the previews
     clickable: ".fileinput-button" // Define the element that should be used as click trigger to select files.
@@ -227,7 +227,7 @@ $(function () {
 		e.preventDefault()
 		start_load()
 		$.ajax({
-			url:'ajax.php?action=save_upload',
+			url:'ajax_hsse.php?action=save_upload',
 			data: new FormData($(this)[0]),
 		    cache: false,
 		    contentType: false,
